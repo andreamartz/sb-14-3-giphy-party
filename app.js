@@ -1,9 +1,3 @@
-// Add event listener to Remove Images button
-
-// async function getRandomGif(){
-
-// }
-
 // get a GIF based on searchTerm
 async function getGif(searchTerm) {
   try {
@@ -32,15 +26,9 @@ form.addEventListener("submit", function (e) {
   input.value = "";
 });
 
-//
-//
-//
-//
-// ***********************************
-//
-// async function getRandomDog() {
-//   const res = await axios.get("https://dog.ceo/api/breeds/image/random");
-//   console.log(res.data);
-//   const img = document.querySelector("#dog");
-//   img.src = res.data.message;
-// }
+const removeBtn = document.querySelector("#remove");
+removeBtn.addEventListener("click", function (e) {
+  // $("#gif-gallery").empty();
+  const gallery = document.querySelector("#gif-gallery");
+  gallery.innerHTML = "";
+});

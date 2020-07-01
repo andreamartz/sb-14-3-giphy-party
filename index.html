@@ -13,13 +13,13 @@
 
   <body class="container">
     <h1 class="text-center my-5">Giphy Party</h1>
-    <div class="row justify-content-center">
-      <form class="form-inline">
-        <label class="sr-only" for="inlineFormInputName2">Name</label>
+    <div class="row justify-content-center mb-5">
+      <form id="search-form" class="form-inline">
+        <label class="sr-only" for="search-term">Name</label>
         <input
           type="text"
           class="form-control mb-2 mr-sm-2"
-          id="inlineFormInputName2"
+          id="search-term"
           placeholder="Enter a search term"
         />
         <button id="submit" type="submit" class="btn btn-primary mb-2 mr-sm-2">
@@ -30,7 +30,10 @@
         Remove Images
       </button>
     </div>
-    <div class="row"></div>
+    <div
+      id="gif-gallery"
+      class="row justify-content-center align-items-center"
+    ></div>
 
     <!-- JS, Popper.js, and jQuery -->
     <script
